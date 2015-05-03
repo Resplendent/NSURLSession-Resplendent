@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'NSURLSession-Resplendent', :exclusive => true do
+  pod "NSURLSession-Resplendent", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "NSURLSession-Resplendent", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
