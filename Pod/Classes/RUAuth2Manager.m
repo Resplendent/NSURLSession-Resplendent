@@ -6,8 +6,8 @@
 //
 //
 
-#import "ABMAuth2Manager.h"
-#import "ABMAuthenticationCredentials.h"
+#import "RUAuth2Manager.h"
+#import "RUAuthenticationCredentials.h"
 
 
 
@@ -75,7 +75,7 @@ static NSError * ABMErrorFromRFC6749Section5_2Error(id object) {
 
 
 
-@interface ABMAuth2Manager ()
+@interface RUAuth2Manager ()
 
 @property (nonatomic, readonly) NSURLSession* session;
 
@@ -105,7 +105,7 @@ static NSError * ABMErrorFromRFC6749Section5_2Error(id object) {
 
 
 
-@implementation ABMAuth2Manager
+@implementation RUAuth2Manager
 
 #pragma mark - NSObject
 -(instancetype)init
@@ -215,7 +215,7 @@ static NSError * ABMErrorFromRFC6749Section5_2Error(id object) {
 			refreshToken = [parameters valueForKey:@"refresh_token"];
 		}
 		
-		ABMAuthenticationCredentials* credential = [ABMAuthenticationCredentials credentialWithOAuthToken:[jsonResponse valueForKey:@"access_token"] tokenType:[jsonResponse valueForKey:@"token_type"]];
+		RUAuthenticationCredentials* credential = [RUAuthenticationCredentials credentialWithOAuthToken:[jsonResponse valueForKey:@"access_token"] tokenType:[jsonResponse valueForKey:@"token_type"]];
 		
 		if (refreshToken)
 		{

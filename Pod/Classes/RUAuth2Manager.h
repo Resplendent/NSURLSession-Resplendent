@@ -12,13 +12,13 @@
 
 
 
-@class ABMAuthenticationCredentials;
+@class RUAuthenticationCredentials;
 
 
 
 
 
-typedef void(^abm_Auth2Manager_authenticationSuccessBlock) (ABMAuthenticationCredentials *credentials);
+typedef void(^abm_Auth2Manager_authenticationSuccessBlock) (RUAuthenticationCredentials *credentials);
 typedef void(^abm_Auth2Manager_successBlock) (NSDictionary *jsonResponse);
 typedef void(^abm_Auth2Manager_failureBlock) (NSError *error);
 
@@ -26,7 +26,7 @@ typedef void(^abm_Auth2Manager_failureBlock) (NSError *error);
 
 
 
-@interface ABMAuth2Manager : NSObject
+@interface RUAuth2Manager : NSObject
 
 @property (nonatomic, copy) NSString* clientId;
 @property (nonatomic, copy) NSString* secret;

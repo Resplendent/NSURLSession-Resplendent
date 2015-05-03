@@ -46,8 +46,8 @@
 		51F9C00EAD6E7E15BF432809 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3B855621DEEFD1DD951F /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		560C084C31D99203EE1C5012 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = A950E6AA4D5BAEFD650C4AB7 /* EXPMatchers+beLessThan.h */; };
 		5719407012CB02ABA04F51C6 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = B87517048D9DE5E60A64B285 /* SpectaUtility.h */; };
-		595627601AF6A40B00355DA5 /* ABMAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5956275D1AF6A40B00355DA5 /* ABMAuth2Manager.m */; };
-		595627611AF6A40C00355DA5 /* ABMAuthenticationCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 5956275F1AF6A40B00355DA5 /* ABMAuthenticationCredentials.m */; };
+		595627601AF6A40B00355DA5 /* RUAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5956275D1AF6A40B00355DA5 /* RUAuth2Manager.m */; };
+		595627611AF6A40C00355DA5 /* RUAuthenticationCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 5956275F1AF6A40B00355DA5 /* RUAuthenticationCredentials.m */; };
 		5CAAE3B8072B8D11C0EE5205 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDF7CF4F43A02821DF0C885 /* EXPMatchers+beKindOf.h */; };
 		5E5FB3C229596877F30B39DE /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B25CCEFB61CB167C4FF9FB /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5FC135C3D4985F19BAC42BE9 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 738ABDEECAA192EEB6A9D5A9 /* EXPMatchers+beSubclassOf.h */; };
@@ -242,10 +242,10 @@
 		50C8FDF5A2CD8CE750003D33 /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
 		5148A8F803C29F1D6BF70C4E /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
 		51706491B0A975ABB0A5B4F2 /* libPods-NSURLSession-Resplendent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NSURLSession-Resplendent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5956275C1AF6A40B00355DA5 /* ABMAuth2Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABMAuth2Manager.h; path = Pod/Classes/ABMAuth2Manager.h; sourceTree = "<group>"; };
-		5956275D1AF6A40B00355DA5 /* ABMAuth2Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABMAuth2Manager.m; path = Pod/Classes/ABMAuth2Manager.m; sourceTree = "<group>"; };
-		5956275E1AF6A40B00355DA5 /* ABMAuthenticationCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABMAuthenticationCredentials.h; path = Pod/Classes/ABMAuthenticationCredentials.h; sourceTree = "<group>"; };
-		5956275F1AF6A40B00355DA5 /* ABMAuthenticationCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABMAuthenticationCredentials.m; path = Pod/Classes/ABMAuthenticationCredentials.m; sourceTree = "<group>"; };
+		5956275C1AF6A40B00355DA5 /* RUAuth2Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RUAuth2Manager.h; path = Pod/Classes/RUAuth2Manager.h; sourceTree = "<group>"; };
+		5956275D1AF6A40B00355DA5 /* RUAuth2Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RUAuth2Manager.m; path = Pod/Classes/RUAuth2Manager.m; sourceTree = "<group>"; };
+		5956275E1AF6A40B00355DA5 /* RUAuthenticationCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RUAuthenticationCredentials.h; path = Pod/Classes/RUAuthenticationCredentials.h; sourceTree = "<group>"; };
+		5956275F1AF6A40B00355DA5 /* RUAuthenticationCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RUAuthenticationCredentials.m; path = Pod/Classes/RUAuthenticationCredentials.m; sourceTree = "<group>"; };
 		5B9E7A95BF58BEF646233EF4 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
 		5CBE3977DDEE5CD6CEBE1B28 /* Pods-Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
 		5EEDF772F79E61331331069C /* Pods-Tests-Expecta+Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-Expecta+Snapshots-prefix.pch"; sourceTree = "<group>"; };
@@ -558,10 +558,10 @@
 		4C2BB8D0B28D053BB5FE8001 /* NSURLSession-Resplendent */ = {
 			isa = PBXGroup;
 			children = (
-				5956275C1AF6A40B00355DA5 /* ABMAuth2Manager.h */,
-				5956275D1AF6A40B00355DA5 /* ABMAuth2Manager.m */,
-				5956275E1AF6A40B00355DA5 /* ABMAuthenticationCredentials.h */,
-				5956275F1AF6A40B00355DA5 /* ABMAuthenticationCredentials.m */,
+				5956275C1AF6A40B00355DA5 /* RUAuth2Manager.h */,
+				5956275D1AF6A40B00355DA5 /* RUAuth2Manager.m */,
+				5956275E1AF6A40B00355DA5 /* RUAuthenticationCredentials.h */,
+				5956275F1AF6A40B00355DA5 /* RUAuthenticationCredentials.m */,
 			);
 			name = "NSURLSession-Resplendent";
 			path = ../..;
@@ -1023,9 +1023,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595627611AF6A40C00355DA5 /* ABMAuthenticationCredentials.m in Sources */,
+				595627611AF6A40C00355DA5 /* RUAuthenticationCredentials.m in Sources */,
 				AF1927746238A710C075937C /* Pods-NSURLSession-Resplendent-dummy.m in Sources */,
-				595627601AF6A40B00355DA5 /* ABMAuth2Manager.m in Sources */,
+				595627601AF6A40B00355DA5 /* RUAuth2Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
