@@ -10,14 +10,14 @@
 Pod::Spec.new do |s|
   s.name             = "NSURLSession-Resplendent"
   s.version          = "0.1.0"
-  s.summary          = "A short description of NSURLSession-Resplendent."
-  s.description      = <<-DESC
-                       An optional longer description of NSURLSession-Resplendent
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/NSURLSession-Resplendent"
+  s.summary          = "Restful NSURLSession implementation. Effectively uses NSURLSession to replace AFNetworking."
+  # s.description      = <<-DESC
+  #                      An optional longer description of NSURLSession-Resplendent
+  #
+  #                      * Markdown format.
+  #                      * Don't worry about the indent, we strip it!
+  #                      DESC
+  s.homepage         = "https://github.com/Resplendent/NSURLSession-Resplendent"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Lee Pollard" => "tjdet11@gmail.com" }
