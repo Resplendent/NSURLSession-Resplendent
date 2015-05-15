@@ -22,7 +22,7 @@ SPEC CHECKSUMS:
   Expecta: 78b4e8b0c8291fa4524d7f74016b6065c2e391ec
   Expecta+Snapshots: 40c5ec43b43da3bae957f14fed5dc9177d08ec8b
   FBSnapshotTestCase: 9d5fe43b29ae3a0ed8fc829477971b281038f748
-  NSURLSession-Resplendent: ec0e497d7de4d37843db44802d57c944225c45e5
+  NSURLSession-Resplendent: eb617a16bda3a1b67b7e5332112060a265bfe164
   Specta: eb90708ed77569bbda089f8ead10bb99b8e9489e
 
-COCOAPODS: 0.36.4
+COCOAPODS: 0.37.0
