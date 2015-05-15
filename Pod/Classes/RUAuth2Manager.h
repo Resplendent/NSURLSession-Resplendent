@@ -43,6 +43,21 @@ typedef void(^abm_Auth2Manager_failureBlock) (NSError *error);
 					  success:(abm_Auth2Manager_successBlock)success
 					  failure:(abm_Auth2Manager_failureBlock)failure;
 
+- (NSURLSessionDataTask *)GET:(NSString *)URLString
+				   parameters:(id)parameters
+					  success:(abm_Auth2Manager_successBlock)success
+					  failure:(abm_Auth2Manager_failureBlock)failure;
+
+- (NSURLSessionDataTask *)PATCH:(NSString *)URLString
+				   parameters:(id)parameters
+					  success:(abm_Auth2Manager_successBlock)success
+					  failure:(abm_Auth2Manager_failureBlock)failure;
+
+- (NSURLSessionDataTask *)DELETE:(NSString *)URLString
+				   parameters:(id)parameters
+					  success:(abm_Auth2Manager_successBlock)success
+					  failure:(abm_Auth2Manager_failureBlock)failure;
+
 #pragma mark - Authentication
 - (NSURLSessionDataTask *)authenticateUsingOAuthWithURLString:(NSString *)URLString
 														 code:(NSString *)code
