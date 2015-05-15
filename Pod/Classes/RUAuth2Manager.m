@@ -23,6 +23,8 @@ typedef NS_ENUM(NSInteger, ABMAuth2Manager_HTTPMethodType) {
 	ABMAuth2Manager_HTTPMethodType_GET,
 	ABMAuth2Manager_HTTPMethodType_POST,
 	ABMAuth2Manager_HTTPMethodType_PUT,
+	ABMAuth2Manager_HTTPMethodType_PATCH,
+	ABMAuth2Manager_HTTPMethodType_DELETE,
 };
 
 static NSString * const kAMBCharactersToBeEscapedInQueryString = @":/?&=;+!@#$()',*";
@@ -357,9 +359,11 @@ static NSError * ABMErrorFromRFC6749Section5_2Error(id object) {
 	{
 		case ABMAuth2Manager_HTTPMethodType_POST:
 		case ABMAuth2Manager_HTTPMethodType_PUT:
+		case ABMAuth2Manager_HTTPMethodType_PATCH:
 			return YES;
 			
 		case ABMAuth2Manager_HTTPMethodType_GET:
+		case ABMAuth2Manager_HTTPMethodType_DELETE:
 			return NO;
 	}
 
@@ -436,6 +440,51 @@ static NSError * ABMErrorFromRFC6749Section5_2Error(id object) {
 	return [self URLSessionDataTaskWithRequest:request success:success failure:failure];
 }
 
+- (NSURLSessionDataTask *)GET:(NSString *)URLString
+				   parameters:(id)parameters
+					  success:(abm_Auth2Manager_successBlock)success
+					  failure:(abm_Auth2Manager_failureBlock)failure
+{
+	NSMutableURLRequest *request = [self URLRequestURLString:URLString parameters:parameters HTTPMethodType:ABMAuth2Manager_HTTPMethodType_GET];
+	if (request == nil)
+	{
+		NSAssert(false, @"unhandled");
+		return nil;
+	}
+	
+	return [self URLSessionDataTaskWithRequest:request success:success failure:failure];
+}
+
+- (NSURLSessionDataTask *)PATCH:(NSString *)URLString
+					 parameters:(id)parameters
+						success:(abm_Auth2Manager_successBlock)success
+						failure:(abm_Auth2Manager_failureBlock)failure
+{
+	NSMutableURLRequest *request = [self URLRequestURLString:URLString parameters:parameters HTTPMethodType:ABMAuth2Manager_HTTPMethodType_PATCH];
+	if (request == nil)
+	{
+		NSAssert(false, @"unhandled");
+		return nil;
+	}
+	
+	return [self URLSessionDataTaskWithRequest:request success:success failure:failure];
+}
+
+- (NSURLSessionDataTask *)DELETE:(NSString *)URLString
+				   parameters:(id)parameters
+					  success:(abm_Auth2Manager_successBlock)success
+					  failure:(abm_Auth2Manager_failureBlock)failure
+{
+	NSMutableURLRequest *request = [self URLRequestURLString:URLString parameters:parameters HTTPMethodType:ABMAuth2Manager_HTTPMethodType_DELETE];
+	if (request == nil)
+	{
+		NSAssert(false, @"unhandled");
+		return nil;
+	}
+	
+	return [self URLSessionDataTaskWithRequest:request success:success failure:failure];
+}
+
 +(NSString*)requestHTTPMethodForType:(ABMAuth2Manager_HTTPMethodType)HTTPMethodType
 {
 	switch (HTTPMethodType)
@@ -448,6 +497,12 @@ static NSError * ABMErrorFromRFC6749Section5_2Error(id object) {
 
 		case ABMAuth2Manager_HTTPMethodType_PUT:
 			return @"PUT";
+			
+		case ABMAuth2Manager_HTTPMethodType_DELETE:
+			return @"DELETE";
+			
+		case ABMAuth2Manager_HTTPMethodType_PATCH:
+			return @"PATCH";
 	}
 
 	NSAssert(false, @"unhandled");
