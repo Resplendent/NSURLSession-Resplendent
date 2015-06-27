@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NSURLSession-Resplendent"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Restful NSURLSession implementation. Effectively uses NSURLSession to replace AFNetworking."
   # s.description      = <<-DESC
   #                      An optional longer description of NSURLSession-Resplendent
