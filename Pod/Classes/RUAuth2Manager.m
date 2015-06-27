@@ -357,7 +357,11 @@ static NSError * ABMErrorFromRFC6749Section5_2Error(id object) {
 
 			if (keyObjectComponentsArray.count > 0)
 			{
-				[mutableURLString appendString:@"?"];
+				if (mutableURLString.length > 0)
+				{
+					[mutableURLString appendString:@"?"];
+				}
+
 				[mutableURLString appendString:[keyObjectComponentsArray componentsJoinedByString:@"&"]];
 			}
 		}
